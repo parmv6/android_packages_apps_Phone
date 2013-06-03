@@ -29,6 +29,10 @@ public class ClearMissedCallsService extends IntentService {
     public static final String ACTION_CLEAR_MISSED_CALLS =
             "com.android.phone.intent.CLEAR_MISSED_CALLS";
 
+    /** This action is used to clear blacklisted calls. */
+    public static final String ACTION_CLEAR_BLACKLISTED_CALLS =
+            "com.android.phone.intent.CLEAR_BLACKLISTED_CALLS";
+
     private PhoneGlobals mApp;
 
     public ClearMissedCallsService() {
@@ -43,7 +47,8 @@ public class ClearMissedCallsService extends IntentService {
 
     @Override
     protected void onHandleIntent(Intent intent) {
-        if (ACTION_CLEAR_MISSED_CALLS.equals(intent.getAction())) {
+        String action = intent.getAction();
+        if (ACTION_CLEAR_MISSED_CALLS.equals(action)) {
             // Clear the list of new missed calls.
             ContentValues values = new ContentValues();
             values.put(Calls.NEW, 0);
@@ -56,6 +61,8 @@ public class ClearMissedCallsService extends IntentService {
             getContentResolver().update(Calls.CONTENT_URI, values, where.toString(),
                     new String[]{ Integer.toString(Calls.MISSED_TYPE) });
             mApp.notificationMgr.cancelMissedCallNotification();
+        } else if (ACTION_CLEAR_BLACKLISTED_CALLS.equals(action)) {
+            mApp.notificationMgr.cancelBlacklistedCallNotification();
         }
     }
 }
