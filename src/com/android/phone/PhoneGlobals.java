@@ -262,8 +262,8 @@ public class PhoneGlobals extends ContextWrapper
     // For adding to Blacklist from call log
     private static final String INSERT_BLACKLIST = "com.android.phone.INSERT_BLACKLIST";
     private static final String REMOVE_BLACKLIST = "com.android.phone.REMOVE_BLACKLIST";
-+    private static final String EXTRA_NUMBER = "number";
-+    private static final String EXTRA_FROM_NOTIFICATION = "fromNotification";
+    private static final String EXTRA_NUMBER = "number";
+    private static final String EXTRA_FROM_NOTIFICATION = "fromNotification";
 
     /**
      * Set the restore mute state flag. Used when we are setting the mute state
