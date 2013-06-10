@@ -424,6 +424,10 @@ public class PhoneUtils {
             String s = PreferenceManager.getDefaultSharedPreferences(context)
                       .getString("flip_action", "0");
             return Integer.parseInt(s);
+	}
+        static boolean showCallLogAfterCall(Context context) {
+            return PreferenceManager.getDefaultSharedPreferences(context)
+                      .getBoolean("button_calllog_after_call", false);
         }
     }
 
