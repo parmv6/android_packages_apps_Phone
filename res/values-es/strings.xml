@@ -627,4 +627,49 @@
     <string name="vibrate_on_ring_title" msgid="9197564612065258960">"Vibrar al sonar"</string>
     <string name="dtmf_tone_enable_title" msgid="827601042915852989">"Sonar al marcar número"</string>
     <string name="preference_category_ringtone" msgid="5197960752529332721">"Tono y vibración"</string>
+    <string name="preference_category_ringtone" msgid="9007490591910078324">"Tono"</string>
+    <string name="perm_change_mobile_network">Cambiar red (2G/3G)</string>
+    <string name="perm_change_mobile_network_desc">Las aplicaciones con este permiso, pueden en cualquier momento, cambiar entre datos 2G y 3G. 3G es rápido, consume mas batería, y puede costarte mas dinero.</string>
+    <string name="noise_suppression_title">Supresor de ruido</string>
+    <string name="noise_suppression_summary">Activar la supresión de ruido durante las llamadas</string>
+    <string name="advanced_setting">Configuración avanzada</string>
+    <string name="vibrate_outgoing">Vibrar al contestar</string>
+    <string name="vibrate_call_waiting">Vibrar en llamada en espera</string>
+    <string name="vibrate_hangup">Vibrar al colgar</string>
+    <string name="vibrate_45">Vibrar cada minuto</string>
+    <string name="vibrate_45_sum">Vibrar en el segundo 45 de cada minuto de una llamada saliente</string>
+    <string name="rejected_as_missed">Rechazar como perdidas</string>
+    <string name="rejected_as_missed_sum">Marcar las llamadas rechazadas como \u00ABperdidas\u00BB en vez de \u00ABentrantes\u00BB en el registro de llamadas</string>
+    <string name="show_ssn_label">Notificación de eventos</string>
+    <string name="show_ssn_summary">Mostrar la notificación de eventos de red relacionados con la gestión de llamadas</string>
+    <string name="calllog_after_call">Mostrar registro</string>
+    <string name="calllog_after_call_summary">Mostrar el registro de la llamada al colgar</string>
+    <string name="national_roaming">Itinerancia de datos nacional</string>
+    <string name="national_roaming_enable">Establecer conexión con servicios de datos en itinerancia nacional</string>
+    <string name="national_roaming_disable">No establecer conexión con servicios de datos en itinerancia nacional</string>
+    <string name="perm_change_mobile_network">Cambiar red (2G/3G)</string>
+    <string name="perm_change_mobile_network_desc">Las aplicaciones con este permiso pueden, en cualquier momento, cambiar entre datos 2G y 3G. Es más rápido 3G, pero consume más batería y puede costar más dinero.</string>
+    <string name="blacklist_title">Lista negra</string>
+    <string name="enable_blacklist_title">Activar lista negra</string>
+    <string name="blacklist_summary_disabled">Desactivada</string>
+    <string name="blacklist_summary">Las llamadas entrantes de los números de la lista negra serán bloqueadas</string>
+    <string name="blacklist_notify">Mostrar notificación</string>
+    <string name="blacklist_private_numbers_title">Números privados</string>
+    <string name="blacklist_private_numbers_summary">Bloquear llamadas entrantes de números privados</string>
+    <string name="blacklist_unknown_numbers_title">Números desconocidos</string>
+    <string name="blacklist_unknown_numbers_summary">Bloquear llamadas entrantes de números que no estén en la lista de contactos</string>
+    <string name="blacklist_regex_title">Permitir comodines</string>
+    <string name="blacklist_regex_summary">Usar \u00AB.\u00BB como comodín y \u00AB*\u00BB para repetición. Por ejemplo \u00AB123.*\u00BB bloqueará números que comiencen por 123 y \u00AB.*123.*\u00BB bloqueará números que contengan 123</string>
+    <string name="add_blacklist_number">Añadir número de teléfono</string>
+    <string name="add_to_blacklist">Añadir a la lista negra</string>
+    <string name="add_to_blacklist_message">Serán bloqueadas las llamadas futuras de %s</string>
+    <string name="remove_blacklist_number_title">Quitar número de teléfono</string>
+    <string name="remove_blacklist_number">¿Quitar %s de la lista negra?</string>
+    <string name="blacklist_notification">Llamada de %s, bloqueada</string>
+    <string name="blacklist_notification_private_number">Llamada de número privado, bloqueada</string>
+    <string name="blacklist_notification_list_private">Privado</string>
+    <string name="blacklist_notification_unknown_number">Número desconocido %s, bloqueado</string>
+    <string name="blacklist_notification_multiple"><xliff:g id="count">%d</xliff:g> llamadas fueron bloqueadas</string>
+    <string name="unblock_number">Desbloquear</string>
+    <string name="onscreenBlacklistText">Lista negra</string>
 </resources>
