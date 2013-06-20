@@ -249,7 +249,7 @@ public class CallNotifier extends Handler
                         TONE_RELATIVE_VOLUME_SIGNALINFO);
                 Log.d(LOG_TAG, "CallNotifier: mSignalInfoToneGenerator created when toneplay");
             } catch (RuntimeException e) {
-                Log.w(LOG_TAG, "CallNotifier: Exception caught while creating " 
+                Log.w(LOG_TAG, "CallNotifier: Exception caught while creating " +
                         "mSignalInfoToneGenerator: " + e);
                 mSignalInfoToneGenerator = null;
             }
